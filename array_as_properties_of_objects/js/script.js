@@ -1,9 +1,10 @@
+// json- javascript object notation
+
 // Create a pet Object
 
 // arrays as properties of objects
-// json- javascript object notation
 
-const dog = {
-  breeds: ["golden", "poodle"],
+const dogs = {
+  breeds: ["golden retriever", "labrador", "poodle"],
 };
-console.log(dog.breeds);
+console.log(dogs.breeds);

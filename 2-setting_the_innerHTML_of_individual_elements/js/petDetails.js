@@ -1,7 +1,7 @@
 const pet = {
   type: "pig",
   colour: "#ff0000",
-  age: 0,
+  age: 10,
   isFriendly: false,
   name: "Benny",
 };
@@ -27,8 +27,9 @@ console.log(petColour);
 console.log(petType);
 console.log(petAge);
 console.log(isPetFriendly);
+
 petDetail.innerHTML = `
-<h4>${petType}</h4>
-<p>${petColour}</p>
-<p>${isPetFriendly}</p>
+<h4 style="color:${pet.colour}">Type of pet: ${petType}</h4>
+<p>Age: ${petAge}</p>
+<p>friendly: ${isPetFriendly ? "no" : "yes"} </p>
 `;
