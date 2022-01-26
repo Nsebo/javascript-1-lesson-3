@@ -28,8 +28,16 @@ console.log(petType);
 console.log(petAge);
 console.log(isPetFriendly);
 
+const petcolour = pet.colour;
+const petAges =
+  pet.age > 0
+    ? pet.age
+    : "information about age is not available at the moment";
+const PetHeight = pet.height;
+const petWeight = pet.weight;
+
 petDetail.innerHTML = `
-<h4 style="color:${pet.colour}">Type of pet: ${petType}</h4>
+<h4 style="color:${petcolour}">Type of pet: ${petType}</h4>
 <p>Age: ${petAge}</p>
 <p>friendly: ${isPetFriendly ? "no" : "yes"} </p>
 `;
